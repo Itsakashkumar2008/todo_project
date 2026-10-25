@@ -1,0 +1,86 @@
+body {
+    font-family: Arial;
+    background-color: #dceeff;
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #a9bed3;
+    box-sizing: border-box;
+}
+h1 {
+    color: #315f9e;
+    text-align: center;
+    margin-top: 0;
+}
+form {
+    display: flex;
+    gap: 8px;
+}
+input {
+    padding: 10px;
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+button {
+    padding: 10px;
+    background-color: #315f9e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #244879;
+}
+
+ul {
+    padding: 0;
+}
+li {
+    background-color: #f1f5fa;
+    padding: 10px;
+    margin-top: 10px;
+    list-style: none;
+}
+.task {
+    margin-right: 10px;
+}
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+.delete {
+    background-color: #c0392b;
+}
+#message {
+    color: red;
+}
+#count {
+    color: #315f9e;
+    font-weight: bold;
+}
+#empty {
+    color: #777;
+}
+@media (max-width: 400px) {
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+}
