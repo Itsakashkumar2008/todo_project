@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Todo List</h1>
+        <form onsubmit="addTask(event)">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button type="submit">Add</button>
+        </form>
+        <p id="message"></p>
+        <p id="count">Total tasks: 0</p>
+        <ul id="taskList"></ul>
+        <p id="empty">No tasks added yet.</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
